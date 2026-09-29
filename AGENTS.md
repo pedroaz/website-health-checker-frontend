@@ -19,3 +19,7 @@ Playwright 1.63.0 generated the official Codex definitions in `.codex/agents/` u
 OpenHands: these workflow steps and AGENTS.md can be used directly. Configure its MCP integration, if supported by the installed host, with command `npx` and arguments `["playwright", "run-test-mcp-server"]` in this working directory. No native OpenHands generated-agent integration is claimed. If the host does not expose the needed MCP tools, use its terminal with Playwright tests and reports, and state the limitation.
 
 Use BASE_URL, API_URL and MAILPIT_URL when targeting nondefault URLs. Do not run against an external production system. Browser reports live in playwright-report/; failures retain traces/screenshots in test-results/. These are ignored by Git.
+
+## Agent lifecycle
+
+Agent setup and CI are now part of this repository. Read `docs/AGENT_SETUP.md`. Claude reads `CLAUDE.md` and `.claude/skills`; native OpenHands should read `.claude/skills/work-ticket/SKILL.md` explicitly and follow the same flow. Use Haiku only with no automatic upgrades. Ticket work uses feature branches and PRs, never direct main pushes, merges or deployments. Verification evidence must match the current files. A PR is ready for review, not Done.

@@ -42,3 +42,7 @@ The suite includes lifecycle, email delivery, unhealthy/timeout, private-network
 Official Playwright Codex planner/generator/healer definitions are included under `.codex/agents/`. See [AGENTS.md](AGENTS.md) for host setup, OpenHands usage and repair rules, and [specs/showcase.md](specs/showcase.md) for the browser test plan. Ordinary Playwright tests do not need an LLM or OpenAI key. Generated agent definitions can be refreshed with `npx playwright init-agents --loop=codex`; preserve the useful seed test when doing so.
 
 The [backend README](https://github.com/pedroaz/website-health-checker-backend/blob/main/README.md) owns startup, API and production-gap documentation. The full approved [implementation plan](https://github.com/pedroaz/website-health-checker-backend/blob/main/PLAN.md) lives in the backend root. This is deliberately a local single-user demo; authentication, production operations, deployment, hosted CI and OpenAI integration are outside this iteration.
+
+## Agent development
+
+See [local and OpenHands agent setup](docs/AGENT_SETUP.md) for Claude Haiku, MCP connections, lifecycle skills and CI verification.
