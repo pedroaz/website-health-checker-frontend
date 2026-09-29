@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
-  title: "Pulse — Website health",
+  title: "Cool Demo",
   description: "A local website monitoring showcase",
 };
 export default function RootLayout({
